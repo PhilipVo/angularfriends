@@ -8,7 +8,7 @@ app.controller('editController', function ($scope, $location, $routeParams, frie
 
 	$scope.update = function() {
 		friendsFactory.update($scope.friend, function() {
-			$location.url(`/edit/${$scope.friend._id}`);
+			$location.url(`/show/${$scope.friend._id}`);
 		});
 	};
 })

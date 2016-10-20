@@ -9,6 +9,7 @@ module.exports = {
 	create: function(req, res) {
 		var friend = new Friend(req.body)
 		friend.save(function(err, _friend) {
+			console.log(_friend)
 			res.json(_friend);
 		});
 	},

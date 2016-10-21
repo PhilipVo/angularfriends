@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var FriendSchema = new mongoose.Schema({
-	first_name: {type: String, required : true, minlength: 2},
-	last_name: {type: String, required : true, minlength: 2},
-	birthday: {type: Date, required : true},
+	user: {type: String, required : true, minlength: 2},
+	score: {type: String, required : true},
+	percentage: {type: Number, required : true}
 }, {timestamps: true});
 var Friend = mongoose.model('Friend', FriendSchema);
